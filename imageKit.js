@@ -1,4 +1,4 @@
-var ImageKit = require('imagekit');
+let imageKit = require('imagekit');
 
 const {
     IMAGEKIT_PUBLIC_KEY,
@@ -6,7 +6,7 @@ const {
     IMAGEKIT_URL_ENDPOINT
 } = process.env;
 
-module.exports = new ImageKit({
+module.exports = new imageKit({
     publicKey: IMAGEKIT_PUBLIC_KEY,
     privateKey: IMAGEKIT_SECRET_KEY,
     urlEndpoint: IMAGEKIT_URL_ENDPOINT
